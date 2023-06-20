@@ -1,0 +1,28 @@
+.site-header {
+    text-align: center;
+    padding: 50px 0; /* Вы можете настроить отступы в соответствии с вашим дизайном */
+  }
+
+  .site-content {
+    text-align: center;
+    padding: 50px 0; /* Вы можете настроить отступы в соответствии с вашим дизайном */
+  }
+
+  .site-content img {
+    display: block;
+    margin: 0 auto; /* Устанавливает отступы по горизонтали для центрирования */
+    margin-bottom: 20px; /* Добавляет немного пустого пространства после изображения */
+  }
+
+  .site-content p {
+    font-size: 14px; /* Размер шрифта для текста */
+    font-weight: normal; /* Убирает жирное начертание для текста */
+  }
+  
+  .space--bottom-3 {
+    margin-bottom: 2.25rem;
+}
+                .border-top-bottom {
+                  border-top: 1px solid #000000; /* Граница сверху */
+                  border-bottom: 1px solid #000000; /* Граница снизу */
+                }

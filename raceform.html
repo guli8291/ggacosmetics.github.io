@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Application Form</title>
+    <link rel="stylesheet" href="./6lab.css">
+    <script src="6lab.js"></script>
+</head>
+<body>
+  <form action="submit.php" method="post" onsubmit="return validateForm()">
+    <h2><span class="d33">RAGE REGISTRATION PAGE</span></h2>
+    <p onclick="this.innerHTML='Ooops!'" id="demo"></p>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="title">Title:</label>
+    <div id="titleOptions">
+      <label>
+        <input type="checkbox" name="title" value="mr">
+        Mr.
+      </label>
+      <label>
+        <input type="checkbox" name="title" value="mrs">
+        Mrs.
+      </label>
+      <label>
+        <input type="checkbox" name="title" value="ms">
+        Ms.
+      </label>
+    </div>
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name"  required>
+<label for="last_name">Last Name:</label>
+<input type="text" id="last_name" name="last_name" required>
+
+<label for="address">Complete Postal Mailing Address:</label>
+<textarea id="address" name="address" required></textarea>
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" required>
+
+<label for="fax">Fax:</label>
+<input type="tel" id="fax" name="fax">
+
+<label for="occupation">Occupation:</label>
+<input type="text" id="occupation" name="occupation" required>
+
+<label for="maritalStatus">Marital Status:</label>
+    <div id="maritalStatusOptions">
+      <label>
+        <input type="checkbox" name="maritalStatus" value="single">
+        Single
+      </label>
+      <label>
+        <input type="checkbox" name="maritalStatus" value="married">
+        Married
+      </label>
+      <label>
+        <input type="checkbox" name="maritalStatus" value="divorced">
+        Divorced
+      </label>
+      <label>
+        <input type="checkbox" name="maritalStatus" value="widowed">
+        Widowed
+      </label>
+    </div>
+
+<h3>Emergency Contact:</h3>
+<label for="emergency_name">Name:</label>
+<input type="text" id="emergency_name" name="emergency_name" required>
+
+<label for="emergency_email">Email:</label>
+<input type="email" id="emergency_email" name="emergency_email" required>
+
+<label for="emergency_phone">Phone:</label>
+<input type="tel" id="emergency_phone" name="emergency_phone" required>
+
+<label for="trip">Select Trip:</label>
+<select id="trip" name="trip" required>
+  <option value="">Select</option>
+  <option value="stage_race">Stage Race</option>
+  <option value="everest_challenge_marathon">Mt. Everest Challenge Marathon</option>
+  <option value="everest_bike_rally">Mt. Everest Bike Rally</option>
+</select>
+
+
+<label for="activity">I am a:</label>
+<select id="activity" name="activity" required>
+  <option value="">Select</option>
+  <option value="runner">Runner</option>
+  <option value="walker">Walker</option>
+  <option value="cyclist">Cyclist</option>
+</select>
+
+
+<label for="tshirt_size">T-Shirt Size:</label>
+<select id="tshirt_size" name="tshirt_size" required>
+  <option value="">Select</option>
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+  <option value="xlarge">X-Large</option>
+</select>
+
+<label for="smoker">Smoker:</label>
+<div id="smokerOptions">
+  <label>
+    <input type="checkbox" name="smoker" value="yes">
+    Yes
+  </label>
+  <label>
+    <input type="checkbox" name="smoker" value="no">
+    No
+  </label>
+</div>
+
+<label for="room_sharing">Room Sharing Preference:</label>
+<input type="text" id="room_sharing" name="room_sharing">
+
+<h3>Passport Details:</h3>
+<label for="passport_name">Exact name as it appears:</label>
+<input type="text" id="passport_name" name="passport_name" required>
+
+<label for="passport_number">Number:</label>
+<input type="text" id="passport_number" name="passport_number" required>
+
+<label for="passport_date_issued">Date Issued:</label>
+<input type="text" id="passport_date_issued" name="passport_date_issued" required>
+
+<label for="passport_issued_by">Where Issued:</label>
+<input type="text" id="passport_issued_by" name="passport_issued_by" required>
+<label for="passport_date_expires">Date Expires:</label>
+<input type="text" id="passport_date_expires" name="passport_date_expires" required>
+
+<label for="date_of_birth">Date of Birth:</label>
+<input type="text" id="date_of_birth" name="date_of_birth" required>
+
+<label for="age">Age:</label>
+<input type="text" id="age" name="age" required>
+
+<label for="place_of_birth">Place of Birth:</label>
+<input type="text" id="place_of_birth" name="place_of_birth" required>
+
+<label for="citizen_of">Citizen of:</label>
+<input type="text" id="citizen_of" name="citizen_of" required>
+
+<p>See <a href="booking_conditions.html" target="_blank">booking conditions</a> for all the trips.</p>
+
+<input type="checkbox" id="agree_terms" name="agree_terms" required>
+<label for="agree_terms">I agree to all booking terms & conditions</label>
+
+<br><br>
+<input type="submit" value="Submit">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="raceform.js"></script>
+  </form>
+</body>
+</html>
